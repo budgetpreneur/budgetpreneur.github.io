@@ -1,0 +1,79 @@
+﻿body
+{
+/* light blue background color and light green background color with gradient color in increasing order, which should bring reader attention in reading the content without too much brightness */
+background: linear-gradient(to bottom, #87CEFA, #90EE90);
+
+/* body margin similar to news paper */
+margin: 0 10% 0 10%;
+    
+}
+#tblMain {
+    background-color: #e5e8e8;
+}
+/* center the h1 tag of the body */
+body h2 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+body p {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* set the table column widths. first column to 10%, second column to 90%*/
+table colgroup col:first-child {
+    
+}
+table colgroup col.mainTblFirstCol {
+    width: 19%;
+}
+table colgroup col.mainTblSecondCol {
+    width: 1%;
+    background-color: #e59866;
+}
+table colgroup col.mainTblThirdCol {
+    width: 80%;
+}
+table tr td {
+    vertical-align: top;
+}
+table tr td ul {
+    list-style: none;
+}
+table tr td ul.skills {
+    vertical-align: top;
+    list-style-type: square;
+}
+table tr td ul li:before {
+    content: "\2022";
+    color: darkviolet;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+table tr td div ul li p {
+    text-align: left;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
